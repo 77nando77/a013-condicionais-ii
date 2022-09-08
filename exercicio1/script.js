@@ -8,13 +8,17 @@ const num = Number(prompt("Digite um número."))
 //     if(expressao){
 //         if(expressao){
 if(num %2 === 0){
+    console.log("Número divizivel por 2")
     if(num %3 === 0){
-        console.log("Esse número é divisível por 2 e 3");
+        console.log("Esse número é divisível por 3");
     }else{
         console.log("Esse número é divisível por 2 mas não é divisível por 3");
     }
-}else{
-    console.log("Esse número não é divisível nem por 2 e nem por 3");
+}else if (num % 3 ===0){
+    console.log("Esse número é divisível por 3 e não por 2");
+} else {
+    console.log("Esse número não é divisível por 3 e nem por 2");
+
 }
 //         }
 //     }
@@ -27,4 +31,4 @@ if(num % 2 === 0 && num %3 === 0){
     console.log("Esse numero é divisível por 2 e 3")
 }else {
     console.log("Esse número não é divisível por 2 e 3")}
-//     }
+    // }
